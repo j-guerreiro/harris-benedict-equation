@@ -31,7 +31,7 @@ def calculaGE( fator, sexo, peso, altura, idade ):
       geMasc = 66 + ( 13.8 * peso ) + ( 5.0 * altura ) - ( 6.8 * idade )
       valFat = geMasc * fator
       print("Gasto Energetico para o Sexo Masculino: ")
-      print(float (geMasc) , "Calorias por dia", "\nCalorias por dia com Fator de Atividade Fisica Fator: ", valFat, "\n")
+      print(float (geMasc) , "Calorias por dia", "\nCalorias por dia com Fator de Atividade Fisica: ", valFat, "\n")
       
 
 s = input("\nInforme o SEXO: ")
