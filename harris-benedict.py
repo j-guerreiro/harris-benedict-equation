@@ -41,6 +41,6 @@ a = float(input("\nInforme a ALTURA: "))
 i = float(input("\nInforme a IDADE: "))
 f = float(input("\nFator de Atividade Fisica: "))
 
-calculaGE( s, p, a, i, f)
+calculaGE( f, s, p, a, i)
 
     
