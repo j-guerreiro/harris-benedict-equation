@@ -4,10 +4,11 @@
 Equacao para Sexo Feminino = 655 + (9,6 x P) + (1,9 x A) – (4,7 x I)
 Equacao para Sexo Masculino = 66 + (13,8 x P) + (5,0 x A) – (6,8 x I)
 
+S = sexo
 P = peso
 A = altura
 I = idade
-EX = exercise factor
+F = fator de atividade fisica
 
 FATOR DE ATIVIDADE FISICA  | CATEGORIA              | EXPLICAÇAO
 --------------------------------------------------------------------------------------------------------
@@ -40,6 +41,6 @@ a = float(input("\nInforme a ALTURA: "))
 i = float(input("\nInforme a IDADE: "))
 f = float(input("\nFator de Atividade Fisica: "))
 
-calculaGE( f, s, p, a, i)
+calculaGE( s, p, a, i, f)
 
     
