@@ -21,25 +21,25 @@ FATOR DE ATIVIDADE FISICA  | CATEGORIA              | EXPLICAÇAO
 
 def calculaGE( fator, sexo, peso, altura, idade ):
     if ( sexo == 'f' ):
-      print("Sexo escolhido - Feminino")
+      print("\nSexo escolhido - Feminino")
       geFem = 655 + ( 9.6 * peso ) + ( 1.9 * altura ) - ( 4.7 * idade )
       valFat = geFem * fator
       print("Gasto Energetico para o Sexo Feminino: ") 
-      print( float (geFem) , "Calorias por dia", "Calorias + Fator: ", valFat)
+      print( float (geFem) , "Calorias por dia", "\nCalorias por dia com Fator de Atividade Fisica: ", valFat, "\n")
     else:
-      print("Sexo escolhido - Masculino")
+      print("\nSexo escolhido - Masculino")
       geMasc = 66 + ( 13.8 * peso ) + ( 5.0 * altura ) - ( 6.8 * idade )
       valFat = geMasc * fator
       print("Gasto Energetico para o Sexo Masculino: ")
-      print(float (geMasc) , "Calorias por dia", "Calorias + Fator: ", valFat)
+      print(float (geMasc) , "Calorias por dia", "\nCalorias por dia com Fator de Atividade Fisica Fator: ", valFat, "\n")
       
 
-s = input("Informe o SEXO: ")
-p = float(input("Informe o PESO: "))
-a = float(input("Informe a ALTURA: "))
-i = float(input("Informe a IDADE: "))
-f = float(input("Fator de Atividade Fisica: "))
+s = input("\nInforme o SEXO: ")
+p = float(input("\nInforme o PESO: "))
+a = float(input("\nInforme a ALTURA: "))
+i = float(input("\nInforme a IDADE: "))
+f = float(input("\nFator de Atividade Fisica: "))
 
-calculaGE( s, p, a, i)
+calculaGE( f, s, p, a, i)
 
     
