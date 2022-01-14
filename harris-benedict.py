@@ -7,26 +7,38 @@ Equacao para Sexo Masculino = 66 + (13,8 x P) + (5,0 x A) – (6,8 x I)
 P = peso
 A = altura
 I = idade
+EX = exercise factor
+
+FATOR DE ATIVIDADE FISICA  | CATEGORIA              | EXPLICAÇAO
+--------------------------------------------------------------------------------------------------------
+1.2                        | Sedentarismo           | Pouco ou nenhum exercicio
+1.375                      | Levemente Ativo        | Leve ( 1 a 3 dias por semana )
+1.55                       | Moderadamente Ativo    | Moderado ( 3 a 5 dias por semana )
+1.7                        | Altamente Ativo        | Muita Atividade Fisica ( 6 ou 7 dias por semana )
+1.9                        | Extremamente Ativo     | Muita Atividade ou Trabalho Fisico
 
 '''
 
-def calculaGE( sexo, peso, altura, idade ):
+def calculaGE( fator, sexo, peso, altura, idade ):
     if ( sexo == 'f' ):
       print("Sexo escolhido - Feminino")
       geFem = 655 + ( 9.6 * peso ) + ( 1.9 * altura ) - ( 4.7 * idade )
+      valFat = geFem * fator
       print("Gasto Energetico para o Sexo Feminino: ") 
-      print( float (geFem) , "Calorias por dia")
+      print( float (geFem) , "Calorias por dia", "Calorias + Fator: ", valFat)
     else:
       print("Sexo escolhido - Masculino")
       geMasc = 66 + ( 13.8 * peso ) + ( 5.0 * altura ) - ( 6.8 * idade )
+      valFat = geMasc * fator
       print("Gasto Energetico para o Sexo Masculino: ")
-      print(float (geMasc) , "Calorias por dia")
+      print(float (geMasc) , "Calorias por dia", "Calorias + Fator: ", valFat)
       
 
 s = input("Informe o SEXO: ")
 p = float(input("Informe o PESO: "))
 a = float(input("Informe a ALTURA: "))
 i = float(input("Informe a IDADE: "))
+f = float(input("Fator de Atividade Fisica: "))
 
 calculaGE( s, p, a, i)
 
